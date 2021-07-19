@@ -132,7 +132,7 @@ export default function Login(props) {
                 
               </Grid>
               <Grid item>
-                <a href="register" >
+                <a href="/register" >
                   {"Don't have an account? Sign Up"}
                 </a>
               </Grid>

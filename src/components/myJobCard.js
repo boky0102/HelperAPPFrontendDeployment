@@ -97,7 +97,7 @@ function MyJobCard(props){
 
         }, [])
     
-    console.log("DISTANCE", distance);
+      
     
 
     function handleCardClick(){

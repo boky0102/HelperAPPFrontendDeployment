@@ -187,7 +187,7 @@ function NewJob(){
 
 
         }
-        console.log(jobData);
+          
         event.preventDefault();
     }
 
@@ -214,7 +214,7 @@ function NewJob(){
         
         
 
-        console.log("SUBMITED");
+          
         const url="https://helper-app-server-deployment-wvj4p.ondigitalocean.app/newJob";
         const data = cookies.get('token');
 

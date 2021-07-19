@@ -77,7 +77,7 @@ function UserBigCard(props){
 
         axios.get(url, {headers: {'authorization' : `Bearer ${token}`}})
         .then((response) => {
-            console.log(response.data);
+              
             setProfileData(response.data);
         })
         .catch(err => console.log(err));

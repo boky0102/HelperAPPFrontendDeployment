@@ -6,7 +6,7 @@ import avatar from "../static/picture.jpg";
 import SendIcon from '@material-ui/icons/Send';
 
 function Conversation(props){
-    console.log("MailHolder: ", props.mailHolder);
+      
     const cookie = new Cookies();
 
     const [conversationData, setConData] = useState([]);
@@ -54,7 +54,7 @@ function Conversation(props){
         const token = cookie.get('token');
         axios.get(url, {headers: {'authorization': `Bearer ${token}`}})
         .then((response) => {
-            console.log(response.data);
+              
             setConData(response.data);
             scrollToBottom();
 
@@ -101,10 +101,10 @@ function Conversation(props){
         findOther(conversationData, props.mailHolder)
         .then((other) => {
             const urlOther = "https://helper-app-server-deployment-wvj4p.ondigitalocean.app/avatar/" + other;
-            console.log(urlOther);
+              
             axios.get(urlOther)
             .then((response) => {
-            console.log("SEVER RES :", response);
+              
             setAvatars((prevAvat) => {
                 return{
                     ...prevAvat,
@@ -126,7 +126,7 @@ function Conversation(props){
 
     function handleMessageChange(event){
         setMessage(event.target.value);
-        console.log(message);
+          
     }
 
     const messagesEndRef = useRef(null)
@@ -169,18 +169,18 @@ function Conversation(props){
                 setMessage("");
             }
             else{
-                console.log("Message not sent");
+                  
             }
         })
         .catch((err) => {
-            console.log(err);
+              
         })
 
     }
 
     
 
-    console.log(avatars);
+      
     
     return(
         <Grid item container xs={12}>

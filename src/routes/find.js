@@ -97,7 +97,7 @@ function Find(props){
         }
 
         
-        console.log(searchParams);
+          
 
     }
 
@@ -227,7 +227,7 @@ function Find(props){
             userURL = "none";
         }
 
-        console.log(titleURL, categoryURL, distanceURL, userURL);
+          
 
 
         const url="https://helper-app-server-deployment-wvj4p.ondigitalocean.app/find/"+titleURL+"&"+categoryURL+"&"+distanceURL+"&"+userURL;
@@ -236,7 +236,7 @@ function Find(props){
             setJobData(response.data);
             
         }).catch((err) => {
-            console.log(err);
+              
         });
 
 
@@ -247,7 +247,7 @@ function Find(props){
         return url;
     }
 
-    console.log(jobData);
+      
 
 
     

@@ -82,16 +82,16 @@ function App (){
                 setAuthentication(true);
                 const user = response.data;
                 setCurrentUser(user);
-                console.log("CURRENT USER : ", currentUser);
+                  
             }
         }).catch((err) => {
-            console.log(err);
+              
         })
     }
 
     useEffect(() => {
         checkCookie();
-        console.log("Auth :",isAuthenticated);
+          
     },[]);
 
     
@@ -169,13 +169,13 @@ function App (){
             }
             
         })
-        console.log(newUser);
+          
         
     }
 
     function handleRegSubmit(event){
 
-        console.log(newUser);
+          
         const data = {
             username: newUser.username,
             password: newUser.password,
@@ -185,7 +185,7 @@ function App (){
             firstAndLastName: newUser.firstAndLastName
         }
 
-        console.log("Data prije slanje :",data);
+          
         
         const url ="https://helper-app-server-deployment-wvj4p.ondigitalocean.app/register";
 
@@ -216,7 +216,7 @@ function App (){
             })
             .catch((error) => {
                 setRegError("Wrong address");
-                console.log(error);
+                  
             });
         } else{
             setRegError("Passwords don't match");

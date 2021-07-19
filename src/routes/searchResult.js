@@ -21,7 +21,7 @@ function SearchResult(){
         axios.get(url, {headers: {'Cache-Control' : 'no-cache'}})
         .then((response) => {
             setJobs([...response.data]);
-            console.log(response.data);
+              
         })
         .catch(err => console.log(err))
         
@@ -58,22 +58,22 @@ function SearchResult(){
     function handleSortChange(event){
         if(event.target.value === "Distance"){
             const sortedJobs = [...jobs.sort((a,b) => (a.distance < b.distance ? -1 : 1))]
-            console.log("SORTED JOBS", sortedJobs);
+              
             setJobs(() => sortedJobs);
         }
         else if(event.target.value === "Budget-higher"){
             const sortedJobs = [...jobs.sort((a,b) => (a.budget < b.budget ? 1 : -1))]
-            console.log("SORTED JOBS", sortedJobs);
+              
             setJobs(() => sortedJobs);
         }
         else if(event.target.value === "Budget-lower"){
             const sortedJobs = [...jobs.sort((a,b) => (a.budget < b.budget ? -1 : 1))]
-            console.log("SORTED JOBS", sortedJobs);
+              
             setJobs(() => sortedJobs);
         }
     }
 
-    console.log("JOB", jobs);
+      
 
     return(
         <Box>

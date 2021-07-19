@@ -23,7 +23,7 @@ function MyJobs(){
         .catch(err => console.log(err));
     }, [])
 
-    console.log("MYJOB DATA :", myJobsData);
+      
     const theme = useTheme();
 
     const useStyles = makeStyles(

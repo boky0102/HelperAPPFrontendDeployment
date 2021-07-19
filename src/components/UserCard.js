@@ -12,7 +12,7 @@ function UserCard(props){
     const cookies = new Cookie();
     const theme = useTheme();
 
-    console.log("Worker: ", props.worker);
+      
 
     const [workerData, setWorkerData] = useState({});
 
@@ -23,7 +23,7 @@ function UserCard(props){
         const token = cookies.get('token');
         axios.get(url, {headers : {'authorization' : `Bearer ${token}`}})
         .then((response) => {
-            console.log(response);
+              
             setWorkerData(response.data);
         })
         .catch(err => console.log(err));
@@ -78,7 +78,7 @@ function UserCard(props){
         }
         axios.post(url, data, {headers : {'authorization' : `Bearer ${token}`}})
         .then((response) => {
-            console.log(response);
+              
             setLoading({
                 finished: true,
                 started: false

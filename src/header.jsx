@@ -129,7 +129,7 @@ function Header(props){
         .then((response) => {
             setAvat(response.data);
         })
-        .catch(err => console.log(err));
+        .catch(err =>   (err));
     },[username])
 
     useEffect(() => {

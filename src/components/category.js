@@ -10,7 +10,7 @@ import machineFix from "../static/categoryIcons/spanner.svg";
 import { Box, Typography } from "@material-ui/core";
 
 function Category(props){
-    console.log(props.category);
+      
     switch(props.category){
         case "Digital":
             return (

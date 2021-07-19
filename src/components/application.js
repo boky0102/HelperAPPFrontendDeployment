@@ -100,7 +100,7 @@ function Application(props){
         }
         axios.post( url ,data, {headers:{'authorization' : `Bearer ${token}`}})
         .then((response) => {
-            console.log(response);
+              
             props.rerender((prevJobs) => {
                 prevJobs.filter((job) => {
                     if(job.id !== props.jobId){

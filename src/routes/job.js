@@ -76,7 +76,7 @@ function Job(props){
 
     useEffect(() => {
         const url = "https://helper-app-server-deployment-wvj4p.ondigitalocean.app/job/" + id;
-        console.log("GET URL: ", url);
+          
         axios.get(url)
         .then((response) => {
             setReviews(response.data.userData.reviews);
@@ -86,12 +86,12 @@ function Job(props){
             
         })
         .catch((err) => {
-            console.log(err);
+              
         })
 
     }, []);
 
-    console.log("Reviews",reviews);
+      
 
 
     function handleMessageChange(event){
@@ -117,7 +117,7 @@ function Job(props){
         }
       })
       .catch((err) => {
-        console.log(err);
+          
       })
     }
 
@@ -175,7 +175,7 @@ function Job(props){
     const history = useHistory();
 
     useEffect(() => {
-      console.log("Ulazim u efekt");
+        
       
       if(mess === true){
 

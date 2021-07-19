@@ -31,7 +31,7 @@ function ScheduledJobs(){
         const url = "https://helper-app-server-deployment-wvj4p.ondigitalocean.app/appliedScheduled"
         axios.get(url, {headers: {'authorization' : `Bearer ${token}`}})
         .then((response) => {
-            console.log("SCHEDULED RES", response.data);
+              
             setAppliedJobs(response.data);
         })
         .catch(err => console.log(err));

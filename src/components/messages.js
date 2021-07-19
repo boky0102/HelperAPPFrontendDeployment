@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react"
 
 function Message(props){
 
-    console.log("PROP NAME: ", props.name);
+      
     const useStyles = makeStyles(
         {
             avatStyle:{
@@ -24,7 +24,7 @@ function Message(props){
         axios.get(url)
         .then((response) => {
             setAvatarSrc(response.data);
-            console.log(response.data);
+              
         })
     },[])
 

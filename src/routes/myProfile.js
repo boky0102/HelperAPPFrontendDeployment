@@ -38,7 +38,7 @@ function Myprofile(){
 
         })
         .catch((err) => {
-            console.log(err);
+              
         })
     }, [])
 
@@ -56,7 +56,7 @@ function Myprofile(){
     });
     
 
-    console.log(userData);
+      
 
 
     function handleFormChange(event){
@@ -209,16 +209,16 @@ function Myprofile(){
 
         axios.post(url, formData, {headers: {'authorization' : `Bearer ${token}`}})
         .then((response) =>{
-            console.log(response);
+              
         })
         .catch((err) => {
-            console.log(err);
+              
         })
         
 
     }
     
-    console.log(userData.city, userData.streetAndNum);
+      
     return(
         
 

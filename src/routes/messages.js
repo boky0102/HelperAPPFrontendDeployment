@@ -56,10 +56,10 @@ function Messager(){
         .catch((err) => console.log(err))
     },[])
 
-    console.log("Message data : ",messageData);
+      
 
     function handleClick(event){
-        console.log(event.target.value);
+          
     }
 
     useEffect(() => {
@@ -70,7 +70,7 @@ function Messager(){
             }
         
         })
-        console.log(conversationData);
+          
 
     },[setMessage, currentMessage])
 
@@ -84,7 +84,7 @@ function Messager(){
     }
     
 
-    console.log(currentMessage);
+      
 
     const history = useHistory();
 

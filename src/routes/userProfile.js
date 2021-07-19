@@ -35,7 +35,7 @@ function Profile(){
 
     
 
-    console.log(userData);
+      
 
     const theme = useTheme();
     const useStyles = makeStyles(

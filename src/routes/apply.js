@@ -26,10 +26,10 @@ function Apply(props){
             ]
         })
     }
-    console.log(dates);
+      
 
     function handleDelClick(index){
-        console.log("INDEX FOR DELETE : ", index);
+          
         setDates(prevDates => prevDates.filter((date, currentIndex) => {
             if(currentIndex !== index){
                 return date;
@@ -63,7 +63,7 @@ function Apply(props){
 
         axios.post(url, data, {headers: {'authorization' : `Bearer ${token}`}})
         .then((response) => {
-            console.log(response);
+              
             if(response.status === 200){
                 didPost((prevStatus) => {
                     return{
@@ -99,7 +99,7 @@ function Apply(props){
         
     }, [posted])
 
-    console.log(message);
+      
     return(
         <Box width="100%" display="flex">
             <Box width="100%" m={3} mt={3}>
